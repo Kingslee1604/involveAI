@@ -14,7 +14,7 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 
-openai.api_key = "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"
+openai.api_key = "newKeyneeded"
 
 class MarketResearchRequest(BaseModel):
     details: str
