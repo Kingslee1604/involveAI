@@ -1,0 +1,70 @@
+.market-research-container {
+    background-image: url('../bckground.jpg'); /* Adjust path as needed */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start; /* Align to the start vertically */
+    align-items: flex-start; /* Align to the start horizontally */
+}
+
+.market-research-form {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 20px;
+    border: 2px solid #2a9d8f; /* Bold border color */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.market-research-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px; /* Adjusted spacing */
+    border: 2px solid #2a9d8f; /* Matching border color */
+    border-radius: 5px;
+    font-weight: bold; /* Make text bold */
+    font-size: 16px; /* Adjust font size */
+}
+
+.submit-button {
+    background-color: #2a9d8f; /* Bold and thematic color */
+    color: white;
+    padding: 15px 30px; /* Larger padding for a bigger button */
+    font-size: 18px; /* Larger font size */
+    letter-spacing: 1px; /* Spacing between letters */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(42, 157, 143, 0.3); /* Soft shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.submit-button:hover {
+    background-color: #1f6f67; /* Darker shade for hover state */
+    box-shadow: 0 6px 12px rgba(42, 157, 143, 0.45); /* Larger shadow on hover */
+}
+
+.response-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px; /* Set a max-width for larger screens */
+}
+
+.label-text {
+    font-size: 20px; /* Larger font size for the label */
+    color: #333; /* Dark color for better readability */
+    font-weight: bold; /* Make label text bold */
+}

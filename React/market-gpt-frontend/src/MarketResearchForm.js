@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './MarketResearchForm.css'; // Import the CSS file you'll create
 
 function MarketResearchForm() {
     const [details, setDetails] = useState('');
@@ -6,7 +7,8 @@ function MarketResearchForm() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const fetchedResponse = await fetch('http://127.0.0.1:8000/market-research', {
+        const apiUrl = 'https://9a8urwmm59.execute-api.us-east-1.amazonaws.com/dev/market-research';
+        const fetchedResponse = await fetch(apiUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -18,20 +20,21 @@ function MarketResearchForm() {
     };
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className="market-research-container">
+            <form onSubmit={handleSubmit} className="market-research-form">
                 <label>
-                    Market Research Details:
+                    MarketGPT:
                     <input
                         type="text"
                         value={details}
                         onChange={(e) => setDetails(e.target.value)}
+                        className="market-research-input"
                     />
                 </label>
-                <button type="submit">Submit</button>
+                <button type="submit" className="submit-button">Submit</button>
             </form>
             {response && (
-                <div className="response">
+                <div className="response-container">
                     <h2>Response:</h2>
                     <p>{response}</p>
                 </div>
